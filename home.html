@@ -4,184 +4,214 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casa do Norte Medina</title>
+<link rel="stylesheet" href="e-home.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="homem.css">
 </head>
+
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <img src="images/logo.png" class="logo">
+<!-- NAVBAR -->
+<header class="navbar">
 
-  <div class="header-actions">
-    <button class="icon-btn">
-      <svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm6-6V11a6 6 0 1 0-12 0v5l-2 2v1h16v-1Z"/></svg>
-    </button>
+<div class="logo-area">
+<img src="images/logo.png" class="logo-img">
+<h1>Casa do Norte <span>Medina</span></h1>
+</div>
 
-    <button class="icon-btn">
-      <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2ZM7.2 14h9.9c.8 0 1.5-.5 1.8-1.2l3-7H5.2l-.9-2H1v2h2l3.6 7.6-1.3 2.4C4.5 16.4 5 17 5.7 17H21v-2H7.2Z"/></svg>
-    </button>
-  </div>
+<div class="search-box">
+<input type="text" placeholder="Buscar produtos...">
+</div>
+
+<div class="nav-icons">
+<button class="icon-btn">🛒</button>
+<button class="icon-btn">👤</button>
+</div>
+
 </header>
 
-<!-- SEARCH -->
-<section class="search">
-  <input type="text" placeholder="Buscar produtos, marcas e categorias">
+<!-- HERO -->
+<section class="hero">
+<h1>Sabores Tradicionais do Norte</h1>
+<p>Produtos autênticos direto pra sua casa</p>
+<button>Ver Produtos</button>
 </section>
 
-<!-- SLIDER -->
-<section class="slider">
-  <div class="slides">
+<!-- CATEGORIAS -->
+<section class="categories">
 
-    <div class="slide active">
-      <div>
-        <h2>Sexta é dia de Feijoada</h2>
-        <p>Kit completo com ingredientes selecionados</p>
-      </div>
-    </div>
+<h2>Categorias</h2>
 
-    <div class="slide">
-      <div>
-        <h2>Produtos direto do Norte</h2>
-        <p>Sabor autêntico e qualidade premium</p>
-      </div>
-    </div>
+<div class="category-list">
+<div class="category">🥩 Carnes</div>
+<div class="category">🧀 Queijos</div>
+<div class="category">🍯 Doces</div>
+<div class="category">🌶 Temperos</div>
+<div class="category">🥤 Bebidas</div>
+<div class="category">🍬 Snacks</div>
+</div>
 
-    <div class="slide">
-      <div>
-        <h2>Entrega rápida</h2>
-        <p>Receba tudo no conforto da sua casa</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
 </section>
 
-<!-- CATEGORIES -->
-<section class="section">
-  <div class="section-header">
-    <h3>Categorias</h3>
-  </div>
+<!-- PRODUTOS -->
+<section class="restaurants">
 
-  <div class="categories">
+<h2>Produtos Populares</h2>
 
-    <div class="category">
-      <div class="circle">🌶</div>
-      <span>Temperos</span>
-    </div>
+<div class="cards">
 
-    <div class="category">
-      <div class="circle">🫘</div>
-      <span>Feijoada</span>
-    </div>
+<!-- carnes -->
+<div class="card">
+<img src="https://picsum.photos/300?1">
+<div class="card-info">
+<h3>Carne Seca</h3>
+<p>Tradicional nordestina</p>
+<button>Adicionar</button>
+</div>
+</div>
 
-    <div class="category">
-      <div class="circle">🍬</div>
-      <span>Doces</span>
-    </div>
+<div class="card">
+<img src="https://picsum.photos/300?2">
+<div class="card-info">
+<h3>Jabá</h3>
+<p>Ideal pra feijoada</p>
+<button>Adicionar</button>
+</div>
+</div>
 
-    <div class="category">
-      <div class="circle">🌾</div>
-      <span>Grãos</span>
-    </div>
+<div class="card">
+<img src="https://picsum.photos/300?3">
+<div class="card-info">
+<h3>Pé de Porco</h3>
+<p>Sabor caseiro</p>
+<button>Adicionar</button>
+</div>
+</div>
 
-    <div class="category">
-      <div class="circle">🥩</div>
-      <span>Carnes</span>
-    </div>
+<div class="card">
+<img src="https://picsum.photos/300?4">
+<div class="card-info">
+<h3>Orelha de Porco</h3>
+<p>Especialidade regional</p>
+<button>Adicionar</button>
+</div>
+</div>
 
-  </div>
+<!-- doces -->
+<div class="card">
+<img src="https://picsum.photos/300?5">
+<div class="card-info">
+<h3>Doce de Leite</h3>
+<p>Artesanal</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?6">
+<div class="card-info">
+<h3>Geleia Caseira</h3>
+<p>Natural</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?7">
+<div class="card-info">
+<h3>Goiabada</h3>
+<p>Tradicional</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<!-- queijos -->
+<div class="card">
+<img src="https://picsum.photos/300?8">
+<div class="card-info">
+<h3>Queijo Minas</h3>
+<p>Fresco</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?9">
+<div class="card-info">
+<h3>Queijo Coalho</h3>
+<p>Perfeito pra assar</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<!-- temperos -->
+<div class="card">
+<img src="https://picsum.photos/300?10">
+<div class="card-info">
+<h3>Colorau</h3>
+<p>Tempero regional</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?11">
+<div class="card-info">
+<h3>Tempero Baiano</h3>
+<p>Sabor intenso</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?12">
+<div class="card-info">
+<h3>Chimichurri</h3>
+<p>Perfeito pra carnes</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?13">
+<div class="card-info">
+<h3>Lemon Pepper</h3>
+<p>Toque especial</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<!-- extras -->
+<div class="card">
+<img src="https://picsum.photos/300?14">
+<div class="card-info">
+<h3>Fini</h3>
+<p>Pacote sortido</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?15">
+<div class="card-info">
+<h3>Refrigerante</h3>
+<p>Lata gelada</p>
+<button>Adicionar</button>
+</div>
+</div>
+
+</div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="section">
-
-  <div class="section-header">
-    <h3>Promoções</h3>
-    <a href="#">Ver tudo</a>
-  </div>
-
-  <div class="products">
-
-    <div class="product">
-      <span class="badge">OFERTA</span>
-      <img src="https://picsum.photos/400/300?1">
-      <h4>Tempero Completo</h4>
-      <div class="prices">
-        <span class="old">R$16,90</span>
-        <span class="new">R$12,90</span>
-      </div>
-      <button class="add">+</button>
-    </div>
-
-    <div class="product">
-      <span class="badge">OFERTA</span>
-      <img src="https://picsum.photos/400/300?2">
-      <h4>Linguiça Calabresa</h4>
-      <div class="prices">
-        <span class="old">R$34,90</span>
-        <span class="new">R$28,90</span>
-      </div>
-      <button class="add">+</button>
-    </div>
-
-    <div class="product">
-      <span class="badge">OFERTA</span>
-      <img src="https://picsum.photos/400/300?3">
-      <h4>Doce Regional</h4>
-      <div class="prices">
-        <span class="old">R$22,90</span>
-        <span class="new">R$18,90</span>
-      </div>
-      <button class="add">+</button>
-    </div>
-
-  </div>
+<!-- PROMO -->
+<section class="promo">
+<h2>Entrega Rápida 🚚</h2>
+<p>Receba seus produtos fresquinhos em casa</p>
+<button>Comprar Agora</button>
 </section>
 
-<!-- NAVBAR -->
-<nav class="nav">
-  <button class="active">
-    <span>🏠</span>
-    Início
-  </button>
-
-  <button>
-    <span>📦</span>
-    Categorias
-  </button>
-
-  <button>
-    <span>🛒</span>
-    Carrinho
-  </button>
-
-  <button>
-    <span>👤</span>
-    Perfil
-  </button>
-</nav>
-
-
-<script>
-const slides = document.querySelectorAll('.slide')
-const dots = document.querySelectorAll('.dot')
-let i = 0
-
-setInterval(()=>{
-  slides[i].classList.remove('active')
-  dots[i].classList.remove('active')
-  i = (i+1) % slides.length
-  slides[i].classList.add('active')
-  dots[i].classList.add('active')
-},4000)
-</script>
+<footer>
+<p>© 2026 Casa do Norte Medina</p>
+</footer>
 
 </body>
 </html>

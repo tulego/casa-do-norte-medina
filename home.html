@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Casa do Norte Medina</title>
-  <link rel="stylesheet" href="home.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa do Norte Medina</title>
+<link rel="stylesheet" href="homem.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="logo">Medina</div>
+<header class="header">
+  <img src="images/logo.png" class="logo">
   <div class="icons">
-    <span>👤</span>
+    <span>🔔</span>
     <span>🛒</span>
   </div>
 </header>
 
-<section class="search">
-  <input type="text" placeholder="O que você procura hoje?">
-</section>
+<div class="search">
+  <input placeholder="O que você procura hoje?">
+</div>
 
-<section class="banner">
-  <div class="banner-content">
-    <h2>🌶️ Sexta é dia de Feijoada!</h2>
-    <p>Kit completo por apenas R$ 89,90</p>
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+
+    <div class="slide active">
+      <h2>🔥 Sexta é dia de Feijoada!</h2>
+      <p>Kit completo por apenas R$ 89,90</p>
+    </div>
+
+    <div class="slide">
+      <h2>🌽 Produtos direto do Norte</h2>
+      <p>Qualidade e sabor original</p>
+    </div>
+
+    <div class="slide">
+      <h2>🚀 Entrega rápida</h2>
+      <p>Receba no conforto da sua casa</p>
+    </div>
+
   </div>
+
   <div class="dots">
-    <span></span><span class="active"></span><span></span>
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 </section>
 
-<section class="categorias">
-  <h3>Categorias</h3>
+<section class="section">
+  <div class="title">Categorias</div>
+  <div class="categories">
 
-  <div class="cat-scroll">
-
-    <div class="cat">
-      <div class="icon">🌶️</div>
-      <p>Temperos Regionais</p>
-    </div>
-
-    <div class="cat">
-      <div class="icon">🫘</div>
-      <p>Pertences p/ Feijoada</p>
-    </div>
-
-    <div class="cat">
-      <div class="icon">🍬</div>
-      <p>Doces do Norte</p>
-    </div>
-
-    <div class="cat">
-      <div class="icon">🌾</div>
-      <p>Farinhas e Grãos</p>
-    </div>
+    <div class="cat"><div>🌶️</div><span>Temperos</span></div>
+    <div class="cat"><div>🫘</div><span>Feijoada</span></div>
+    <div class="cat"><div>🍬</div><span>Doces</span></div>
+    <div class="cat"><div>🌾</div><span>Grãos</span></div>
+    <div class="cat"><div>🥩</div><span>Carnes</span></div>
 
   </div>
 </section>
 
-<section class="promocoes">
-  <div class="promo-header">
-    <h3>Promoções</h3>
+<section class="section">
+  <div class="title-row">
+    <div class="title">Promoções</div>
     <a href="#">Ver tudo</a>
   </div>
 
-  <div class="cards">
+  <div class="products">
 
     <div class="card">
-      <span class="tag">OFERTA</span>
-      <img src="https://picsum.photos/300/200" alt="">
+      <span class="badge">OFERTA</span>
+      <img src="https://picsum.photos/300/200?1">
       <h4>Tempero Completo</h4>
-      <small class="old">R$ 16,90</small>
-      <p class="price">R$ 12,90</p>
+      <div class="old">R$16,90</div>
+      <div class="price">R$12,90</div>
       <button>+</button>
     </div>
 
     <div class="card">
-      <span class="tag">OFERTA</span>
-      <img src="https://picsum.photos/301/200" alt="">
+      <span class="badge">OFERTA</span>
+      <img src="https://picsum.photos/300/200?2">
       <h4>Linguiça Calabresa</h4>
-      <small class="old">R$ 34,90</small>
-      <p class="price">R$ 28,90</p>
+      <div class="old">R$34,90</div>
+      <div class="price">R$28,90</div>
       <button>+</button>
     </div>
 
     <div class="card">
-      <span class="tag">OFERTA</span>
-      <img src="https://picsum.photos/302/200" alt="">
+      <span class="badge">OFERTA</span>
+      <img src="https://picsum.photos/300/200?3">
       <h4>Doce Regional</h4>
-      <small class="old">R$ 22,90</small>
-      <p class="price">R$ 18,90</p>
+      <div class="old">R$22,90</div>
+      <div class="price">R$18,90</div>
       <button>+</button>
     </div>
 
   </div>
 </section>
 
-<nav class="bottom-nav">
-  <a class="active">🏠<span>Início</span></a>
-  <a>📦<span>Categorias</span></a>
-  <a>🛒<span>Carrinho</span></a>
-  <a>👤<span>Perfil</span></a>
+<nav class="nav">
+  <button class="active">🏠<span>Início</span></button>
+  <button>📦<span>Categorias</span></button>
+  <button>🛒<span>Carrinho</span></button>
+  <button>👤<span>Perfil</span></button>
 </nav>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(i){
+  slides.forEach(s=>s.classList.remove("active"));
+  dots.forEach(d=>d.classList.remove("active"));
+  slides[i].classList.add("active");
+  dots[i].classList.add("active");
+}
+
+setInterval(()=>{
+  index++;
+  if(index>=slides.length) index=0;
+  showSlide(index);
+},4000);
+</script>
 
 </body>
 </html>

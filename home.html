@@ -4,34 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa do Norte Medina</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="container">
+  <header class="topo">
+    <h2>Casa do Norte Medina</h2>
+  </header>
 
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
-    </div>
-
-    <h1>Casa do Norte Medina</h1>
-    <p class="subtitulo">Produtos típicos do Norte e Nordeste</p>
-
-    <div class="menu-home">
-      <button onclick="location.href='produtos.html'">
-        Ver Produtos
-      </button>
-
-      <button>
-        Promoções
-      </button>
-
-      <button>
-        Falar no WhatsApp
-      </button>
-    </div>
-
+  <div class="busca">
+    <input type="text" placeholder="Buscar produtos...">
   </div>
+
+  <section class="banner">
+    <h3>Promoção da Semana</h3>
+    <p>Produtos típicos com desconto especial</p>
+  </section>
+
+  <section class="categorias">
+    <div class="categoria">Temperos</div>
+    <div class="categoria">Feijão</div>
+    <div class="categoria">Farinha</div>
+    <div class="categoria">Doces</div>
+  </section>
+
+  <section class="ofertas">
+    <h3>🔥 Ofertas</h3>
+
+    <div class="produtos">
+
+      <div class="card-produto">
+        <h4>Feijão Tropeiro</h4>
+        <p class="preco">R$ 9,99</p>
+      </div>
+
+      <div class="card-produto">
+        <h4>Farinha de Mandioca</h4>
+        <p class="preco">R$ 6,50</p>
+      </div>
+
+      <div class="card-produto">
+        <h4>Doce de Leite</h4>
+        <p class="preco">R$ 12,00</p>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>

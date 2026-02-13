@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 44px; /* aumenta base geral */
+  font-size: 35px; /* aumenta base geral */
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .logo img {
-  width: 150px;
+  width: 250px;
 }
 
 /* Título */

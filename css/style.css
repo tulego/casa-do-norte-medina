@@ -6,11 +6,12 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f5f2ee;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .container {
@@ -21,27 +22,29 @@ body {
 
 .card {
   background: white;
-  width: 350px;
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  width: 90%;
+  max-width: 420px;
+  padding: 50px 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   text-align: center;
 }
 
 .logo img {
-  width: 90px;
-  margin-bottom: 20px;
+  width: 100px;
+  margin-bottom: 25px;
 }
 
 h1 {
-  font-size: 28px;
-  margin-bottom: 5px;
+  font-size: 32px;
+  margin-bottom: 8px;
   color: #2c2c2c;
 }
 
 .subtitulo {
   color: #8a7f73;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  font-size: 15px;
 }
 
 form {
@@ -51,30 +54,33 @@ form {
 label {
   font-size: 14px;
   color: #444;
+  font-weight: bold;
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0 20px 0;
-  border-radius: 12px;
+  padding: 14px;
+  margin: 8px 0 22px 0;
+  border-radius: 14px;
   border: 1px solid #ddd;
-  font-size: 14px;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
 input:focus {
   outline: none;
   border-color: #f28c28;
+  box-shadow: 0 0 0 3px rgba(242,140,40,0.15);
 }
 
 button {
   width: 100%;
-  padding: 14px;
+  padding: 15px;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   background-color: #f28c28;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
@@ -85,19 +91,19 @@ button:hover {
 }
 
 .links {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .links a {
   text-decoration: none;
   color: #f28c28;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .links a:hover {
   text-decoration: underline;
 }
-

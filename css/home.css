@@ -14,21 +14,23 @@ body {
   background: linear-gradient(90deg, #ff7a00, #ff9a3c);
   color: white;
   padding: 25px 20px;
-  font-size: 26px;
-  font-weight: bold;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 
-/* SEARCH */
-.search-box {
-  padding: 20px;
-  margin-top: -15px;
+.header h1 {
+  font-size: 26px;
 }
 
-.search-box input {
+/* SEARCH */
+.search-section {
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.search-section input {
   width: 100%;
-  padding: 18px;
+  padding: 16px;
   font-size: 18px;
   border-radius: 15px;
   border: none;
@@ -36,42 +38,56 @@ body {
   outline: none;
 }
 
-/* SECTION TITLE */
-.section-title {
-  font-size: 22px;
-  font-weight: bold;
-  padding: 15px 20px;
+/* SECTION */
+.section {
+  padding: 15px;
 }
 
-/* PRODUCTS GRID */
+.section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* PRODUCTS */
 .products {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 /* CARD */
-.product-card {
+.card {
   background: white;
-  border-radius: 18px;
   padding: 18px;
-  margin: 15px 10px;
+  border-radius: 18px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.product-card:hover {
-  transform: scale(1.02);
-}
-
-/* PRODUCT NAME */
-.product-name {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-/* PRICE */
-.product-price {
+.card-info h3 {
   font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.price {
   color: #ff7a00;
   font-weight: bold;
+  font-size: 17px;
+}
+
+/* BUTTON */
+.btn {
+  background: #ff7a00;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e56f00;
 }

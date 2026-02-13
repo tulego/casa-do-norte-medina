@@ -1,264 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa do Norte Medina</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins', sans-serif;
-}
-
-body{
-  background:#f4f6f9;
-}
-
-/* ===== HEADER ===== */
-header{
-  position:fixed;
-  width:100%;
-  top:0;
-  z-index:1000;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 60px;
-  background:rgba(139,0,0,0.85);
-  backdrop-filter:blur(10px);
-  color:white;
-  box-shadow:0 5px 20px rgba(0,0,0,0.15);
-}
-
-.logo img{
-  height:55px;
-  display:block;
-}
-
-nav{
-  display:flex;
-  gap:30px;
-  align-items:center;
-}
-
-nav a{
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
-}
-
-nav a:hover{
-  color:#FFD700;
-}
-
-.icons{
-  display:flex;
-  gap:20px;
-  font-size:20px;
-  cursor:pointer;
-}
-
-/* ===== HERO ===== */
-.hero{
-  margin-top:100px;
-  height:500px;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1604908177522-4023e64c88e6');
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
-}
-
-.hero h2{
-  font-size:45px;
-  margin-bottom:20px;
-  font-weight:700;
-}
-
-.hero p{
-  font-size:18px;
-  margin-bottom:30px;
-}
-
-.btn-primary{
-  background:linear-gradient(45deg,#FFD700,#ffcc00);
-  color:black;
-  padding:14px 30px;
-  border:none;
-  border-radius:40px;
-  font-weight:600;
-  cursor:pointer;
-  transition:0.3s;
-  box-shadow:0 10px 25px rgba(255,215,0,0.4);
-}
-
-.btn-primary:hover{
-  transform:scale(1.05);
-}
-
-/* ===== PRODUTOS ===== */
-.section{
-  padding:80px 60px;
-}
-
-.section h3{
-  text-align:center;
-  font-size:30px;
-  margin-bottom:50px;
-}
-
-.produto-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:40px;
-}
-
-.card{
-  background:white;
-  border-radius:20px;
-  overflow:hidden;
-  box-shadow:0 15px 35px rgba(0,0,0,0.08);
-  transition:0.4s;
-}
-
-.card:hover{
-  transform:translateY(-10px);
-  box-shadow:0 20px 40px rgba(0,0,0,0.15);
-}
-
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-}
-
-.card-content{
-  padding:25px;
-  text-align:center;
-}
-
-.card-content h4{
-  margin-bottom:10px;
-  font-size:18px;
-}
-
-.preco{
-  color:#8B0000;
-  font-weight:700;
-  margin-bottom:15px;
-}
-
-.btn-comprar{
-  background:#8B0000;
-  color:white;
-  border:none;
-  padding:12px;
-  width:100%;
-  border-radius:10px;
-  cursor:pointer;
-  transition:0.3s;
-  font-weight:600;
-}
-
-.btn-comprar:hover{
-  background:#a30000;
-}
-
-/* ===== FOOTER ===== */
-footer{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:30px;
-  margin-top:60px;
-}
-
-@media(max-width:768px){
-  header{
-    padding:15px 20px;
-    flex-direction:column;
-    gap:15px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Casa do Norte Medina</title>
+  <link rel="stylesheet" href="home.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<header>
-  <div class="logo">
-    <img src="images/logo.png">
-  </div>
-
-  <nav>
-    <a href="#">Início</a>
-    <a href="#">Produtos</a>
-    <a href="#">Promoções</a>
-    <a href="#">Contato</a>
-  </nav>
-
+<header class="topbar">
+  <div class="logo">Medina</div>
   <div class="icons">
-    <i class="fas fa-search"></i>
-    <i class="fas fa-shopping-cart"></i>
+    <span>👤</span>
+    <span>🛒</span>
   </div>
 </header>
 
-<section class="hero">
-  <div>
-    <h2>Sabores Autênticos do Norte</h2>
-    <p>Qualidade, tradição e entrega rápida direto na sua casa.</p>
-    <button class="btn-primary">Explorar Produtos</button>
+<section class="search">
+  <input type="text" placeholder="O que você procura hoje?">
+</section>
+
+<section class="banner">
+  <div class="banner-content">
+    <h2>🌶️ Sexta é dia de Feijoada!</h2>
+    <p>Kit completo por apenas R$ 89,90</p>
+  </div>
+  <div class="dots">
+    <span></span><span class="active"></span><span></span>
   </div>
 </section>
 
-<section class="section">
-  <h3>Produtos em Destaque</h3>
+<section class="categorias">
+  <h3>Categorias</h3>
 
-  <div class="produto-grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1589308078053-f5d8d1c5a5c0">
-      <div class="card-content">
-        <h4>Carne Seca Premium</h4>
-        <p class="preco">R$ 59,90/kg</p>
-        <button class="btn-comprar">Adicionar ao Carrinho</button>
-      </div>
+  <div class="cat-scroll">
+
+    <div class="cat">
+      <div class="icon">🌶️</div>
+      <p>Temperos Regionais</p>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1604909052747-05f728621f5a">
-      <div class="card-content">
-        <h4>Farinha de Mandioca</h4>
-        <p class="preco">R$ 8,90</p>
-        <button class="btn-comprar">Adicionar ao Carrinho</button>
-      </div>
+    <div class="cat">
+      <div class="icon">🫘</div>
+      <p>Pertences p/ Feijoada</p>
     </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1613478223719-2ab8027a5b2e">
-      <div class="card-content">
-        <h4>Doce de Cupuaçu</h4>
-        <p class="preco">R$ 15,90</p>
-        <button class="btn-comprar">Adicionar ao Carrinho</button>
-      </div>
+    <div class="cat">
+      <div class="icon">🍬</div>
+      <p>Doces do Norte</p>
+    </div>
+
+    <div class="cat">
+      <div class="icon">🌾</div>
+      <p>Farinhas e Grãos</p>
     </div>
 
   </div>
 </section>
 
-<footer>
-© 2026 Casa do Norte Medina - Todos os direitos reservados
-</footer>
+<section class="promocoes">
+  <div class="promo-header">
+    <h3>Promoções</h3>
+    <a href="#">Ver tudo</a>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <span class="tag">OFERTA</span>
+      <img src="https://picsum.photos/300/200" alt="">
+      <h4>Tempero Completo</h4>
+      <small class="old">R$ 16,90</small>
+      <p class="price">R$ 12,90</p>
+      <button>+</button>
+    </div>
+
+    <div class="card">
+      <span class="tag">OFERTA</span>
+      <img src="https://picsum.photos/301/200" alt="">
+      <h4>Linguiça Calabresa</h4>
+      <small class="old">R$ 34,90</small>
+      <p class="price">R$ 28,90</p>
+      <button>+</button>
+    </div>
+
+    <div class="card">
+      <span class="tag">OFERTA</span>
+      <img src="https://picsum.photos/302/200" alt="">
+      <h4>Doce Regional</h4>
+      <small class="old">R$ 22,90</small>
+      <p class="price">R$ 18,90</p>
+      <button>+</button>
+    </div>
+
+  </div>
+</section>
+
+<nav class="bottom-nav">
+  <a class="active">🏠<span>Início</span></a>
+  <a>📦<span>Categorias</span></a>
+  <a>🛒<span>Carrinho</span></a>
+  <a>👤<span>Perfil</span></a>
+</nav>
 
 </body>
 </html>

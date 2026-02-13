@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casa do Norte Medina</title>
+<title>Delivery Pro</title>
 <link rel="stylesheet" href="e-home.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,205 +12,96 @@
 
 <!-- NAVBAR -->
 <header class="navbar">
+    <div class="logo">Delivery<span>Pro</span></div>
 
-<div class="logo-area">
-<img src="images/logo.png" class="logo-img">
-<h1>Casa do Norte <span>Medina</span></h1>
-</div>
+    <div class="search-box">
+        <input type="text" placeholder="Buscar restaurante ou prato...">
+    </div>
 
-<div class="search-box">
-<input type="text" placeholder="Buscar produtos...">
-</div>
-
-<div class="nav-icons">
-<button class="icon-btn">🛒</button>
-<button class="icon-btn">👤</button>
-</div>
-
+    <div class="nav-icons">
+        <button class="icon-btn">🛒</button>
+        <button class="icon-btn">👤</button>
+    </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-<h1>Sabores Tradicionais do Norte</h1>
-<p>Produtos autênticos direto pra sua casa</p>
-<button>Ver Produtos</button>
+    <h1>Peça sua comida favorita</h1>
+    <p>Os melhores restaurantes da sua cidade</p>
+    <button class="hero-btn">Explorar agora</button>
 </section>
 
 <!-- CATEGORIAS -->
 <section class="categories">
+    <h2>Categorias</h2>
 
-<h2>Categorias</h2>
-
-<div class="category-list">
-<div class="category">🥩 Carnes</div>
-<div class="category">🧀 Queijos</div>
-<div class="category">🍯 Doces</div>
-<div class="category">🌶 Temperos</div>
-<div class="category">🥤 Bebidas</div>
-<div class="category">🍬 Snacks</div>
-</div>
-
+    <div class="category-list">
+        <div class="category">🍔 Burgers</div>
+        <div class="category">🍕 Pizza</div>
+        <div class="category">🍣 Japonesa</div>
+        <div class="category">🥗 Saudável</div>
+        <div class="category">🍰 Sobremesas</div>
+        <div class="category">🥤 Bebidas</div>
+    </div>
 </section>
 
-<!-- PRODUTOS -->
+<!-- RESTAURANTES -->
 <section class="restaurants">
+    <h2>Restaurantes Populares</h2>
 
-<h2>Produtos Populares</h2>
+    <div class="cards">
 
-<div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/300/200?food1">
+            <div class="card-info">
+                <h3>Burger House</h3>
+                <p>⭐ 4.8 • 30-40 min</p>
+                <button>Ver Cardápio</button>
+            </div>
+        </div>
 
-<!-- carnes -->
-<div class="card">
-<img src="https://picsum.photos/300?1">
-<div class="card-info">
-<h3>Carne Seca</h3>
-<p>Tradicional nordestina</p>
-<button>Adicionar</button>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200?food2">
+            <div class="card-info">
+                <h3>Pizza Prime</h3>
+                <p>⭐ 4.7 • 25-35 min</p>
+                <button>Ver Cardápio</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/300?2">
-<div class="card-info">
-<h3>Jabá</h3>
-<p>Ideal pra feijoada</p>
-<button>Adicionar</button>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200?food3">
+            <div class="card-info">
+                <h3>Sushi Master</h3>
+                <p>⭐ 4.9 • 40-50 min</p>
+                <button>Ver Cardápio</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/300?3">
-<div class="card-info">
-<h3>Pé de Porco</h3>
-<p>Sabor caseiro</p>
-<button>Adicionar</button>
-</div>
-</div>
+        <div class="card">
+            <img src="https://picsum.photos/300/200?food4">
+            <div class="card-info">
+                <h3>Fit Grill</h3>
+                <p>⭐ 4.6 • 20-30 min</p>
+                <button>Ver Cardápio</button>
+            </div>
+        </div>
 
-<div class="card">
-<img src="https://picsum.photos/300?4">
-<div class="card-info">
-<h3>Orelha de Porco</h3>
-<p>Especialidade regional</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<!-- doces -->
-<div class="card">
-<img src="https://picsum.photos/300?5">
-<div class="card-info">
-<h3>Doce de Leite</h3>
-<p>Artesanal</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?6">
-<div class="card-info">
-<h3>Geleia Caseira</h3>
-<p>Natural</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?7">
-<div class="card-info">
-<h3>Goiabada</h3>
-<p>Tradicional</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<!-- queijos -->
-<div class="card">
-<img src="https://picsum.photos/300?8">
-<div class="card-info">
-<h3>Queijo Minas</h3>
-<p>Fresco</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?9">
-<div class="card-info">
-<h3>Queijo Coalho</h3>
-<p>Perfeito pra assar</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<!-- temperos -->
-<div class="card">
-<img src="https://picsum.photos/300?10">
-<div class="card-info">
-<h3>Colorau</h3>
-<p>Tempero regional</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?11">
-<div class="card-info">
-<h3>Tempero Baiano</h3>
-<p>Sabor intenso</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?12">
-<div class="card-info">
-<h3>Chimichurri</h3>
-<p>Perfeito pra carnes</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?13">
-<div class="card-info">
-<h3>Lemon Pepper</h3>
-<p>Toque especial</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<!-- extras -->
-<div class="card">
-<img src="https://picsum.photos/300?14">
-<div class="card-info">
-<h3>Fini</h3>
-<p>Pacote sortido</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/300?15">
-<div class="card-info">
-<h3>Refrigerante</h3>
-<p>Lata gelada</p>
-<button>Adicionar</button>
-</div>
-</div>
-
-</div>
+    </div>
 </section>
 
 <!-- PROMO -->
 <section class="promo">
-<h2>Entrega Rápida 🚚</h2>
-<p>Receba seus produtos fresquinhos em casa</p>
-<button>Comprar Agora</button>
+    <div class="promo-text">
+        <h2>Promoção do Dia 🔥</h2>
+        <p>Frete grátis em pedidos acima de R$30</p>
+        <button>Aproveitar</button>
+    </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Casa do Norte Medina</p>
+    <p>© 2026 DeliveryPro - Todos os direitos reservados</p>
 </footer>
 
 </body>

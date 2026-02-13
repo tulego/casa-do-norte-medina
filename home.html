@@ -3,106 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delivery Pro</title>
-<link rel="stylesheet" href="e-home.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Casa do Norte Medina</title>
+
+<link rel="stylesheet" href="css/style.css">
+<linklink href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-    <div class="logo">Delivery<span>Pro</span></div>
 
-    <div class="search-box">
-        <input type="text" placeholder="Buscar restaurante ou prato...">
-    </div>
+<div class="nav-left">
+<img src="images/logo.png" class="logo">
+<div class="location">
+<span>Entregar em</span>
+<b>Casa do Norte Medina</b>
+</div>
+</div>
 
-    <div class="nav-icons">
-        <button class="icon-btn">🛒</button>
-        <button class="icon-btn">👤</button>
-    </div>
+<div class="nav-right">
+<button class="nav-btn">Pedidos</button>
+<button class="nav-btn cart-btn">Carrinho</button>
+</div>
+
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Peça sua comida favorita</h1>
-    <p>Os melhores restaurantes da sua cidade</p>
-    <button class="hero-btn">Explorar agora</button>
+<!-- SEARCH -->
+<section class="search-wrapper">
+<div class="search-box">
+<input type="text" placeholder="Buscar produtos...">
+<button class="search-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/622/622669.png">
+</button>
+</div>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+<div class="banner-text">
+<h1>Ofertas Regionais</h1>
+<p>Produtos selecionados com desconto</p>
+<button class="primary-btn">Ver catálogo</button>
+</div>
 </section>
 
 <!-- CATEGORIAS -->
 <section class="categories">
-    <h2>Categorias</h2>
 
-    <div class="category-list">
-        <div class="category">🍔 Burgers</div>
-        <div class="category">🍕 Pizza</div>
-        <div class="category">🍣 Japonesa</div>
-        <div class="category">🥗 Saudável</div>
-        <div class="category">🍰 Sobremesas</div>
-        <div class="category">🥤 Bebidas</div>
-    </div>
+<div class="cat">Carnes</div>
+<div class="cat">Queijos</div>
+<div class="cat">Temperos</div>
+<div class="cat">Doces</div>
+<div class="cat">Bebidas</div>
+<div class="cat">Snacks</div>
+
 </section>
 
-<!-- RESTAURANTES -->
-<section class="restaurants">
-    <h2>Restaurantes Populares</h2>
+<!-- PRODUTOS -->
+<section class="products-section">
 
-    <div class="cards">
+<div class="title-row">
+<h2>Mais vendidos</h2>
+<a href="#">Ver tudo</a>
+</div>
 
-        <div class="card">
-            <img src="https://picsum.photos/300/200?food1">
-            <div class="card-info">
-                <h3>Burger House</h3>
-                <p>⭐ 4.8 • 30-40 min</p>
-                <button>Ver Cardápio</button>
-            </div>
-        </div>
+<div class="products">
 
-        <div class="card">
-            <img src="https://picsum.photos/300/200?food2">
-            <div class="card-info">
-                <h3>Pizza Prime</h3>
-                <p>⭐ 4.7 • 25-35 min</p>
-                <button>Ver Cardápio</button>
-            </div>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908812225-3a1b1c7e9e92">
+<h3>Carne Seca</h3>
+<span>R$ 34,90</span>
+<button>Adicionar</button>
+</div>
 
-        <div class="card">
-            <img src="https://picsum.photos/300/200?food3">
-            <div class="card-info">
-                <h3>Sushi Master</h3>
-                <p>⭐ 4.9 • 40-50 min</p>
-                <button>Ver Cardápio</button>
-            </div>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707">
+<h3>Queijo Coalho</h3>
+<span>R$ 18,50</span>
+<button>Adicionar</button>
+</div>
 
-        <div class="card">
-            <img src="https://picsum.photos/300/200?food4">
-            <div class="card-info">
-                <h3>Fit Grill</h3>
-                <p>⭐ 4.6 • 20-30 min</p>
-                <button>Ver Cardápio</button>
-            </div>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617196037304-5e0d33cd27e3">
+<h3>Goiabada</h3>
+<span>R$ 12,90</span>
+<button>Adicionar</button>
+</div>
 
-    </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<h3>Tempero Baiano</h3>
+<span>R$ 7,90</span>
+<button>Adicionar</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1622483767028-3f66f9f1c8c4">
+<h3>Doce de Leite</h3>
+<span>R$ 14,90</span>
+<button>Adicionar</button>
+</div>
+
+</div>
 </section>
 
-<!-- PROMO -->
-<section class="promo">
-    <div class="promo-text">
-        <h2>Promoção do Dia 🔥</h2>
-        <p>Frete grátis em pedidos acima de R$30</p>
-        <button>Aproveitar</button>
-    </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 DeliveryPro - Todos os direitos reservados</p>
+© Casa do Norte Medina
 </footer>
 
+<script src="js/app.js"></script>
 </body>
 </html>
